@@ -106,3 +106,17 @@ jimp.composite()
 ```js
 jimp.composite(image we declared, x, y)
 ```
+### Example ###
+- - - -
+```js
+let welcome = await jimp.read('https://s23932.pcdn.co/wp-content/uploads/2016/06/cotton-Canvas-Painting-for-Beginners-060116.jpg')
+jimp.read(member.user.displayAvatarURL).then(avatar => { //We take the user's avatar and declare it
+    avatar.resize(128, 128) //We resize the avatar 
+    welcome.composite(avatar, 20, 20) //We put the avatar on the image on the position 20, 20
+});
+```
+
+### Creating the image and sending it [PNG] ###
+- - - -
+Now we can use what we learned and make it into a png and send it :smiling_imp:
+```js
