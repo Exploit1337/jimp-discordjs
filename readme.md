@@ -120,3 +120,26 @@ jimp.read(member.user.displayAvatarURL).then(avatar => { //We take the user's av
 - - - -
 Now we can use what we learned and make it into a png and send it :smiling_imp:
 ```js
+jimp.write()
+```
+
+### Usage ###
+- - - -
+```js
+jimp.write('Name file.png')
+message.channel.send(``, { files: ["Name file.png"] })
+```
+
+### Example ###
+- - - -
+```js
+let font = await jimp.loadFont(jimp.FONT_SANS_32_BLACK) 
+let welcome = await jimp.read('https://s23932.pcdn.co/wp-content/uploads/2016/06/cotton-Canvas-Painting-for-Beginners-060116.jpg') //We load the image from that link
+welcome.print(font, 508, 200, `Hello, ${message.author.tag}`) 
+welcome.write('Welcome2.png') //We create a png file called Welcome2
+message.channel.send(``, { files: ["Welcome2.png"] }) //We sent the file to the channel
+```
+
+### End of tutorial ###
+- - - -
+This is just a basic tutorial for using jimp with discord.js
