@@ -1,5 +1,8 @@
 # Jimp Guide for Discord.js #
 ## Huge thanks to Mental#1424 for teaching me this ##
+### This is also just a republish of mentals guide ###
+
+
 ### Installation ###
 - - - -
 ```
